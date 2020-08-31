@@ -1,0 +1,211 @@
+body
+{
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+
+hr
+{
+  border: dotted;
+  border-bottom: 0;
+  color: #c7b198;
+  margin: 50px auto;
+  width: 10%;
+}
+
+/* Table Settings for Precautions and Symptoms */
+
+.column2
+{
+ float: left;
+ padding: 10px 0;
+ width: 50%;
+}
+
+.row2:after
+{
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+/* header */
+
+.header
+{
+  background-color: #eeeeee;
+  font-family: 'Montserrat';
+  padding: 3%;
+}
+
+.mainhead
+{
+  font-size: 6rem;
+  color: #e8505b;
+  padding-bottom: 30px;
+}
+
+.deschead
+{
+  font-size: 3rem;
+  padding: 20px;
+  color: #b83b5e;
+}
+
+.descrip
+{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #393e46;
+}
+
+/* Symptoms */
+
+.head
+{
+  color: #111d5e;
+  text-align: center;
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+}
+
+
+.symptoms
+{
+  color: #6a2c70;
+  text-align: left;
+  font-size: 2rem;
+  padding: 30px;
+
+}
+
+.precaution
+{
+  color: #6a2c70;
+  text-align: left;
+  font-size: 2rem;
+  margin: 30px;
+}
+
+/* #TESTS */
+
+.prediction
+{
+  padding-top: 7x;
+  margin: 7% 0;
+}
+
+.preddhead
+{
+  margin: 4% 0;
+}
+
+.testClick
+{
+  width: 45%;
+  left: 250px;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.goto
+{
+  margin: 50px;
+  width: 50%;
+}
+
+.formBut
+{
+  margin: 10px;
+}
+
+/* footer */
+
+.footer
+{
+  margin-top: 50px ;
+  background-color: #f1f3f4;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footName
+{
+  color: black;
+}
+
+.abt
+{
+  padding: 30px 0 30px 0;
+}
+
+.con
+{
+  color: #8ec6c5;
+  margin: 0 20px;
+}
+
+.may
+{
+  padding-left: 15%;
+}
+
+.divy
+{
+  right: 150px;
+}
+
+.github:hover
+{
+  color: #000000;
+  text-decoration: none;
+}
+
+.linked:hover{
+  color: #3282b8;
+  text-decoration: none;
+}
+
+.mailing:hover
+{
+  text-decoration: none;
+  color: #e7305b;
+}
+
+.copyrit
+{
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 2;
+}

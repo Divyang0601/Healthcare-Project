@@ -1,0 +1,23 @@
+div
+{
+  margin-top: 50px;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  padding: 100px 0;
+  background-color: #d54062;
+}
+
+h1
+{
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #111d5e;
+}
+
+h3
+{
+  font-size: 2rem;
+  margin-top: 40px;
+  padding-top: 30px;
+  color: #393e46;
+}

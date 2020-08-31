@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Heart Disease </title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/dstyles.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/0278cee5ca.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <section class="header">
+
+    <h1 class='mainhead'> Heart Disease </h1>
+    <h5 class='deschead'> Description </h5>
+    <p class='descrip'> Heart Disease (cardiovascular disease) refers to conditions that involve narrowed or blocked blood vessels that can lead to a heart attack, chest pain (angina) or stroke. </p>
+    <p class='descrip'> Other heart conditions, such as those that affect your heart's muscle, valves or rhythm, also are considered forms of heart disease. </p>
+
+    <hr>
+
+    <div class="symptoms">
+      <h3 class="head"> Symptoms </h3>
+      <div class="row2">
+        <div class="column2"> Chest Pain </div>
+        <div class="column2"> Chest Tightness </div>
+        <div class="column2"> Chest Pressure  </div>
+        <div class="column2"> Chest Discomfort (angina) </div>
+        <div class="column2"> Shortness of Breath </div>
+        <div class="column2"> Weakness or Coldness in Legs or Arms </div>
+        <div class="column2"> Pain in the Neck </div>
+        <div class="column2"> Numbness </div>
+        <div class="column2"> Pain in the Jaw </div>
+        <div class="column2"> Pain in the Throat </div>
+        <div class="column2"> Pain in the Back </div>
+        <div class="column2"> Pain in the Upper Abdomen </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="precaution">
+      <h3 class='head'> Precautions </h3>
+      <div class="row2">
+        <div class="column2"> Control your Blood Pressure </div>
+        <div class="column2"> Stay at a Healthy Weight </div>
+        <div class="column2"> Eat a Healthy Diet </div>
+        <div class="column2"> Limit Alcohol </div>
+        <div class="column2"> Get Regular Exercise  </div>
+        <div class="column2"> Keep Cholesterol levels under control  </div>
+        <div class="column2"> Limit Alcohol  </div>
+        <div class="column2"> Do not Smoke  </div>
+        <div class="column2"> Manage Stress  </div>
+        <div class="column2"> Manage Diabetes  </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Prediction and Tests and Results -->
+
+  <div class="prediction">
+    <h1 class='preddhead'> Tests </h1>
+    <button class="testClick btn btn-outline-info btn-lg" type="submit" name="button"> Click me to TEST </button>
+    <form class="" action="{{url_for('heart_result')}}" method="post">
+    <div class="row">
+
+
+
+      <div class="column">
+        <div class="card">
+          <label for=""> Age </label>
+          <input type="text" name="age" value="" placeholder="Age">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Sex </label>
+          <input type="text" name="sex" value="" placeholder="M-1 F-0">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Chest Pain type </label>
+          <input type="text" name="chest_pain" value="" placeholder="CP">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Trestbps </label>
+          <input type="text" name="trestbps" value="" placeholder="resting blood pressure">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Chol </label>
+          <input type="text" name="chol" value="" placeholder="Cholestrol">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> fbs </label>
+          <input type="text" name="fbs" value="" placeholder="fast blood sugar">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> restecg </label>
+          <input type="text" name="restecg" value="" placeholder="rest electrocardiographic">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Thalach </label>
+          <input type="text" name="thalach" value="" placeholder="max heart rate">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Exang </label>
+          <input type="text" name="exang" value="" placeholder="Exercise induced angina">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for="">OldPeak</label>
+          <input type="text" name="oldpeak" value="" placeholder="OldPeak">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Slope </label>
+          <input type="text" name="slope" value="" placeholder="Slope of peak exercise">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> ca </label>
+          <input type="text" name="ca" value="" placeholder="vessels colored by flourosopy">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> thal </label>
+          <input type="text" name="thal" value="" placeholder="thal">
+        </div>
+      </div>
+
+
+    </div>
+    <button class="formBut btn btn-outline-dark btn-lg" type="submit" name="button"> PREDICT </button>
+    <button class="formBut btn btn-outline-danger btn-lg" type="reset" name="button"> RESET </button>
+</form>
+
+<button class="btn btn-outline-primary btn-lg goto" type="submit" name="button"> GOTO HOME PAGE </button>
+  </div>
+
+
+  <!-- footer -->
+
+  <div id='about' class="footer">
+    <div class="row">
+      <div class="abt may col-lg-6">
+        <h4 class='footName'> Mayank Agarwal </h4>
+        <a class="con linked" href="#"> <i class="fab fa-linkedin fa-2x"></i> </a>
+        <a class="con github" href="#"> <i class="fab fa-github-square fa-2x"></i> </a>
+        <a class="con mailing" href="#"> <i class="fas fa-envelope fa-2x"></i> </a>
+      </div>
+      <div class="abt divy col-lg-6">
+        <h4 class='footName'> Divyang Mishra </h4>
+        <a class="con linked" href="#"> <i class="fab fa-linkedin fa-2x"></i> </a>
+        <a class="con github" href="#"> <i class="fab fa-github-square fa-2x"></i> </a>
+        <a class="con mailing" href="#"> <i class="fas fa-envelope fa-2x"></i> </a>
+      </div>
+
+    </div>
+    <p class='copyrit'> @Copyright 2020</p>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js" type="text/javascript">
+
+</script>
+</body>
+
+
+</html>

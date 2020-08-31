@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Liver Cancer </title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/dstyles.css">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/0278cee5ca.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <section class="header">
+
+    <h1 class='mainhead'> Liver Cancer </h1>
+    <h5 class='deschead'> Description </h5>
+    <p class='descrip'> A cancer that starts in the liver. Cancer starts when cells in the body begin to grow out of control. </p>
+    <p> <a href="https://www.cancer.org/cancer/liver-cancer/about/what-is-liver-cancer.html"> For more information </a> </p>
+
+    <hr>
+
+    <div class="symptoms">
+      <h3 class="head"> Symptoms </h3>
+      <div class="row2">
+
+
+        <div class="column2"> Jaundice </div>
+        <div class="column2"> Abdominal Pain </div>
+        <div class="column2"> Unexplained Weight Loss </div>
+        <div class="column2"> Enlarged Liver and Spleen </div>
+        <div class="column2"> Swelling in the Abdomen </div>
+        <div class="column2"> Full Feeling after a Small Meal </div>
+        <div class="column2"> Nausea </div>
+        <div class="column2"> Vomiting </div>
+        <div class="column2"> Fever </div>
+        <div class="column2"> Backpain </div>
+        <div class="column2"> Itching </div>
+        <div class="column2"> Fatigue </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="precaution">
+      <h3 class='head'> Precautions </h3>
+      <div class="row2">
+        <div class="column2"> Regular Exercise </div>
+        <div class="column2"> Controlling your Weight </div>
+        <div class="column2"> Eating a Healthy Diet  </div>
+        <div class="column2"> Avoid Infection with Hepatitis B virus </div>
+        <div class="column2"> Limited amounts of Alcohol </div>
+        <div class="column2"> Avoid Infection with Hepatitis C virus </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Prediction and Tests and Results -->
+
+  <div class="prediction">
+    <h1 class='preddhead'> Tests </h1>
+    <button class="testClick btn btn-outline-info btn-lg" type="submit" name="button"> Click me to TEST </button>
+    <form class="" action="{{url_for('liver_result')}}" method="POST">
+    <div class="row">
+
+
+
+      <div class="column">
+        <div class="card">
+          <label for=""> Age </label>
+          <input type="text" name="age" value="" placeholder="Age">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Gender </label>
+          <input type="text" name="gender" value="" placeholder="F-0 and M-1">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Total Bilirubin </label>
+          <input type="text" name="tbilrubin" value="" placeholder="Total Bilirubin">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Direct Bilirubin </label>
+          <input type="text" name="dbilrubin" value="" placeholder="Direct Bilirubin">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Alkaline Phosphate </label>
+          <input type="text" name="alphosphate" value="" placeholder="Alkaline Phosphate">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Alamine AminoTransferase </label>
+          <input type="text" name="alaminotrans" value="" placeholder="Alamine AminoTransferase">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Aspartate AminoTransferase </label>
+          <input type="text" name="asaminotrans" value="" placeholder="Aspartate AminoTransferase">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Total Proteins </label>
+          <input type="text" name="tproteins" value="" placeholder="Total Proteins">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Albumin </label>
+          <input type="text" name="albumins" value="" placeholder="Albumin">
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <label for=""> Albumin and Globulin ratio </label>
+          <input type="text" name="albu_and_globu" value="" placeholder="Albumin and Globulin ratio">
+        </div>
+      </div>
+    </div>
+    <button class="formBut btn btn-outline-dark btn-lg" type="submit" name="button"> PREDICT </button>
+    <button class="formBut btn btn-outline-danger btn-lg" type="submit" name="button"> RESET </button>
+</form>
+
+<button class="btn btn-outline-primary btn-lg goto" type="submit" name="button"> GOTO HOME PAGE </button>
+  </div>
+
+
+  <!-- footer -->
+
+  <div id='about' class="footer">
+    <div class="row">
+      <div class="abt may col-lg-6">
+        <h4 class='footName'> Mayank Agarwal </h4>
+        <a class="con linked" href="#"> <i class="fab fa-linkedin fa-2x"></i> </a>
+        <a class="con github" href="#"> <i class="fab fa-github-square fa-2x"></i> </a>
+        <a class="con mailing" href="#"> <i class="fas fa-envelope fa-2x"></i> </a>
+      </div>
+      <div class="abt divy col-lg-6">
+        <h4 class='footName'> Divyang Mishra </h4>
+        <a class="con linked" href="#"> <i class="fab fa-linkedin fa-2x"></i> </a>
+        <a class="con github" href="#"> <i class="fab fa-github-square fa-2x"></i> </a>
+        <a class="con mailing" href="#"> <i class="fas fa-envelope fa-2x"></i> </a>
+      </div>
+
+    </div>
+    <p class='copyrit'> @Copyright 2020</p>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js" type="text/javascript">
+
+</script>
+</body>
+
+
+</html>
